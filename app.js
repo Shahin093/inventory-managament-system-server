@@ -16,5 +16,7 @@ app.get('/', (req, res) => {
 
 // Posting and Getting to Database 
 app.use('/api/v1/product', productRouter)
+// updating Product 
+// app.use('/api/v1/product/:productId', productRouter)
 
 module.exports = app;

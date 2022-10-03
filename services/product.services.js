@@ -3,9 +3,24 @@ const Product = require("../models/Product");
 
 // get Product
 exports.getProductsService = async (filters, queries) => {
-    const products = await Product.find({}).sort(queries.sortBy).select(queries.fields);
-    return products;
-};
+    //    const products = a wait Product.find({}).sort(queries.sortBy).select(queries.fields);
+    const products = await Product.find(filters)
+        .skip(queries.skip)
+        .limit(queries.limit)
+        .select(queries.fields)
+        .sort(queries.sortBy)
+
+    // total Products
+    const totalProducts = await Product.countDocuments(filters);
+    // ceil korar maddome amder ke sesh aa ekti product thakle seta alada page aa dekhabe.
+    const pageCount = Math.ceil(totalProducts / queries.limit);
+    return { pageCount, totalProducts, products };
+}
+
+
+
+
+
 // create product 
 exports.createProductService = async (data) => {
     const product = await Product.create(data);
@@ -14,7 +29,7 @@ exports.createProductService = async (data) => {
 // update 
 exports.updateProductByIdService = async (productId, data) => {
     // const result = await Product.updateOne({ _id: productId }, { $set: data }, { runValidators: true });
-
+    console.log(data);
     const product = await Product.findById(productId);
     const result = await product.set(data).save();
     return result;
@@ -45,6 +60,7 @@ exports.deleteProductByIdService = async (id) => {
 }
 // bulk delete 
 exports.bulkDeleteProductService = async (ids) => {
+
     const result = await Product.deleteOne({ _id: ids });
     return result;
-}
+};

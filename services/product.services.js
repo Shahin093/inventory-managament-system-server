@@ -19,8 +19,6 @@ exports.getProductsService = async (filters, queries) => {
 
 
 
-
-
 // create product 
 exports.createProductService = async (data) => {
     const product = await Product.create(data);

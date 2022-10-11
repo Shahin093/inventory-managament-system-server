@@ -3,20 +3,32 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 
-//  routers 
+// product  routers 
 const productRouter = require('./routes/product.route.js');
+// brand routers 
+const brandRouter = require('./routes/brandRoute.route');
+// stock routers
+const stockRouter = require('./routes/stock.route');
+// category routers
+const categoryRouter = require('./routes/category.route.js');
 
 // middleware 
 app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello World!');
 });
+//Product route Posting and Getting to Database 
+app.use('/api/v1/product', productRouter);
 
-// Posting and Getting to Database 
-app.use('/api/v1/product', productRouter)
-// updating Product 
-// app.use('/api/v1/product/:productId', productRouter)
+// Brand route posting and getting to database 
+app.use('/api/v1/brand', brandRouter);
+
+// stock route 
+app.use('/api/v1/stock', stockRouter);
+
+// Category route
+app.use('/api/v1/category', categoryRouter);
 
 module.exports = app;

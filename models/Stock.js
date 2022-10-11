@@ -45,7 +45,7 @@ const StockSchema = mongoose.Schema({
                     });
                     return isValid;
                 },
-                message: "Please Provide valid image urls . "
+                message: "Please Provide valid image urls-?"
             }
         }
     ],
@@ -137,6 +137,5 @@ const StockSchema = mongoose.Schema({
 // SCHEMA ---> MODEL  --> QUERY
 
 // Creating Model 
-const Stock = mongoose.model('Product', StockSchema)
-
+const Stock = mongoose.model('Stock', StockSchema)
 module.exports = Stock;

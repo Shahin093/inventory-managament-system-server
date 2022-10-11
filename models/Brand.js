@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 // const { validate } = require('./Product');
-const validator = required('validator');
+const validator = require('validator');
 const { ObjectId } = mongoose.Schema.Types;
 
 const brandSchema = mongoose.Schema({
@@ -51,4 +51,4 @@ const brandSchema = mongoose.Schema({
 
 const Brand = mongoose.model("Brand", brandSchema);
 
-exports = Brand;
+module.exports = Brand;

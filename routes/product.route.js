@@ -1,7 +1,15 @@
 const productController = require('../controllers/product.controller.js');
-
 const express = require('express');
+const uploader = require('../middleware/uploader.js');
 const router = express.Router();
+
+// file uploader route 
+router.post("/file-upload", uploader.array("image"), productController.fileUpload);
+
+{/* <input type="file" name="image" /> */ }
+// const formData = new FormData();
+// formData.append("image", forData);
+
 
 // bulk-update 
 router

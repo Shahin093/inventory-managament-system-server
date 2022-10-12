@@ -184,4 +184,12 @@ exports.bulkDeleteProduct = async (req, res, next) => {
             error: error.message
         })
     }
+};
+
+// files uploader controller 
+exports.fileUpload = async (req, res) => {
+    try {
+        res.status(200).json(req.files)
+    } catch (error) {
+    }
 }

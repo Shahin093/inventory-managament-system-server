@@ -1,4 +1,5 @@
 const { ObjectId } = require("mongoose");
+const Brand = require("../models/Brand");
 const Product = require("../models/Product");
 
 // get Product
@@ -22,6 +23,15 @@ exports.getProductsService = async (filters, queries) => {
 // create product 
 exports.createProductService = async (data) => {
     const product = await Product.create(data);
+
+    // update Brand and populate 
+    const { _id, brand } = product;
+    // update Brand 
+    const res = await Brand.updateOne(
+        { _id: brand.id },
+        { $push: { products: _id } }
+    )
+
     return product;
 };
 // update 

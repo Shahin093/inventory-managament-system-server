@@ -11,6 +11,8 @@ const brandRouter = require('./routes/brandRoute.route');
 const stockRouter = require('./routes/stock.route');
 // category routers
 const categoryRouter = require('./routes/category.route.js');
+// supplier routers 
+const supplierRouter = require('./routes/supplier.route');
 
 // middleware 
 app.use(express.json());
@@ -30,5 +32,8 @@ app.use('/api/v1/stock', stockRouter);
 
 // Category route
 app.use('/api/v1/category', categoryRouter);
+
+// Supplier Route 
+app.use('/api/v1/supplier', supplierRouter)
 
 module.exports = app;

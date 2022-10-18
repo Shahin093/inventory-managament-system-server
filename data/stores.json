@@ -1,0 +1,47 @@
+[
+    {
+        "name": "dhaka",
+        "status": "active",
+        "manager": {
+            "name": "",
+            "contactNumber": " ",
+            "id": "..."
+        }
+    },
+    {
+        "name": "chittagong",
+        "status": "active",
+        "manager": {
+            "name": "",
+            "contactNumber": " ",
+            "id": "..."
+        }
+    },
+    {
+        "name": "dhaka",
+        "status": "active",
+        "manager": {
+            "name": "",
+            "contactNumber": " ",
+            "id": "..."
+        }
+    },
+    {
+        "name": "dhaka",
+        "status": "active",
+        "manager": {
+            "name": "",
+            "contactNumber": " ",
+            "id": "..."
+        }
+    },
+    {
+        "name": "dhaka",
+        "status": "active",
+        "manager": {
+            "name": "",
+            "contactNumber": " ",
+            "id": "..."
+        }
+    }
+]

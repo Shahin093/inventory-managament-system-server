@@ -4,7 +4,7 @@
         "email": "mezba.pran@test.com",
         "brand": {
             "name": "Pran",
-            "id": "633177da56be8326a827b812"
+            "id": "634825750dd004ea8b3da1e1"
         },
         "contactNumber": [
             "01111111111",
@@ -24,7 +24,7 @@
         "email": "fahim.teer@test.com",
         "brand": {
             "name": "Teer",
-            "id": "63341b10ff782a369881024b"
+            "id": "634827d30dd004ea8b3da1f0"
         },
         "contactNumber": [
             "01111111111",
@@ -44,7 +44,7 @@
         "email": "jhankar.rupchanda@test.com",
         "brand": {
             "name": "Rupchanada",
-            "id": "6329f4a69c503f0b7438b25e"
+            "id": "6343a0822bccb832a020e5fe"
         },
         "contactNumber": [
             "01111111111",
@@ -64,7 +64,127 @@
         "email": "rasel.fresh@test.com",
         "brand": {
             "name": "Fresh",
+            "id": "6343a0822bccb832a020e5fd"
+        },
+        "contactNumber": [
+            "01111111111",
+            "02222222222"
+        ],
+        "emergencyContactNumber": "011111111",
+        "tradeLicenceNumber": 1111111111,
+        "presentAddress": "944 Honduras Street",
+        "permanentAddress": "944 Ghana Street",
+        "location": "chattogram",
+        "imageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "nationalIdImageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "status": "active"
+    },
+    {
+        "name": "sagor biswas",
+        "email": "sagor.fresh@test.com",
+        "brand": {
+            "name": "ACI",
+            "id": "6329f49f9c503f0b7438b25c"
+        },
+        "contactNumber": [
+            "01111111111",
+            "02222222222"
+        ],
+        "emergencyContactNumber": "011111111",
+        "tradeLicenceNumber": 1111111111,
+        "presentAddress": "944 Honduras Street",
+        "permanentAddress": "944 Ghana Street",
+        "location": "chattogram",
+        "imageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "nationalIdImageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "status": "active"
+    },
+    {
+        "name": "anisul islam",
+        "email": "anisul.fresh@test.com",
+        "brand": {
+            "name": "Rupchanda",
+            "id": "6329f4a69c503f0b7438b25e"
+        },
+        "contactNumber": [
+            "01111111111",
+            "02222222222"
+        ],
+        "emergencyContactNumber": "011111111",
+        "tradeLicenceNumber": 1111111111,
+        "presentAddress": "944 Honduras Street",
+        "permanentAddress": "944 Ghana Street",
+        "location": "chattogram",
+        "imageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "nationalIdImageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "status": "active"
+    },
+    {
+        "name": "shahbaj khan toky",
+        "email": "shabhajkhan.fresh@test.com",
+        "brand": {
+            "name": "Teer",
+            "id": "63341b10ff782a369881024b"
+        },
+        "contactNumber": [
+            "01111111111",
+            "02222222222"
+        ],
+        "emergencyContactNumber": "011111111",
+        "tradeLicenceNumber": 1111111111,
+        "presentAddress": "944 Honduras Street",
+        "permanentAddress": "944 Ghana Street",
+        "location": "chattogram",
+        "imageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "nationalIdImageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "status": "active"
+    },
+    {
+        "name": "razu biswas",
+        "email": "razu.fresh@test.com",
+        "brand": {
+            "name": "Pran",
+            "id": "633177da56be8326a827b812"
+        },
+        "contactNumber": [
+            "01111111111",
+            "02222222222"
+        ],
+        "emergencyContactNumber": "011111111",
+        "tradeLicenceNumber": 1111111111,
+        "presentAddress": "944 Honduras Street",
+        "permanentAddress": "944 Ghana Street",
+        "location": "chattogram",
+        "imageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "nationalIdImageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "status": "active"
+    },
+    {
+        "name": "shakil ahmed atik",
+        "email": "shakil.fresh@test.com",
+        "brand": {
+            "name": "Fresh",
             "id": "6329f32f40244f2a44c85741"
+        },
+        "contactNumber": [
+            "01111111111",
+            "02222222222"
+        ],
+        "emergencyContactNumber": "011111111",
+        "tradeLicenceNumber": 1111111111,
+        "presentAddress": "944 Honduras Street",
+        "permanentAddress": "944 Ghana Street",
+        "location": "chattogram",
+        "imageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "nationalIdImageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+        "status": "active"
+    },
+    {
+        "name": "mir hussain",
+        "email": "mir.fresh@test.com",
+        "brand": {
+            "name": "ACI",
+            "id": "6329f49f9c503f0b7438b25c"
         },
         "contactNumber": [
             "01111111111",

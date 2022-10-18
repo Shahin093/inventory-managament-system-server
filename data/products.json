@@ -10,7 +10,7 @@
         "category": "Rice",
         "brand": {
             "name": "Pran",
-            "id": "..."
+            "id": "634825750dd004ea8b3da1e1"
         }
     },
     {
@@ -24,7 +24,7 @@
         "category": "Rice",
         "brand": {
             "name": "Pran",
-            "id": "..."
+            "id": "634825750dd004ea8b3da1e1"
         }
     },
     {
@@ -38,7 +38,7 @@
         "category": "Rice",
         "brand": {
             "name": "Pran",
-            "id": "..."
+            "id": "634825750dd004ea8b3da1e1"
         }
     },
     {
@@ -64,7 +64,7 @@
         "category": "Rice",
         "brand": {
             "name": "ACI",
-            "id": "..."
+            "id": "6343a0822bccb832a020e5fc"
         }
     },
     {
@@ -77,7 +77,7 @@
         "category": "Oil",
         "brand": {
             "name": "Fresh",
-            "id": "..."
+            "id": "6343a0822bccb832a020e5fd"
         }
     },
     {
@@ -90,7 +90,7 @@
         "category": "Oil",
         "brand": {
             "name": "Rupchanda",
-            "id": "..."
+            "id": "6343a0822bccb832a020e5fe"
         }
     },
     {
@@ -103,7 +103,7 @@
         "category": "Sugar",
         "brand": {
             "name": "Fresh",
-            "id": "..."
+            "id": "6343a0822bccb832a020e5fd"
         }
     },
     {
@@ -115,8 +115,8 @@
         "unit": "kg",
         "category": "Sugar",
         "brand": {
-            "name": "Teer",
-            "id": "..."
+            "name": "Fresh",
+            "id": "6343a0822bccb832a020e5fd"
         }
     }
 ]

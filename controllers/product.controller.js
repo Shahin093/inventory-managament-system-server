@@ -12,7 +12,6 @@ exports.getProducts = async (req, res, next) => {
         // const products = await Product.find({ quentity: { $lte: 100 } });
         // const products = await (await Product.where('name').equals('mull').where('quentity').gt(100).limit(2));
 
-
         const filters = { ...req.query };
         // console.log(filters);
 

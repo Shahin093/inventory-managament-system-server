@@ -13,6 +13,8 @@ const stockRouter = require('./routes/stock.route');
 const categoryRouter = require('./routes/category.route.js');
 // supplier routers 
 const supplierRouter = require('./routes/supplier.route');
+// User Creating 
+const userRouter = require('./routes/user.route.js');
 
 // middleware 
 app.use(express.json());
@@ -34,6 +36,9 @@ app.use('/api/v1/stock', stockRouter);
 app.use('/api/v1/category', categoryRouter);
 
 // Supplier Route 
-app.use('/api/v1/supplier', supplierRouter)
+app.use('/api/v1/supplier', supplierRouter);
+
+// user create 
+app.use('/api/v1/user', userRouter)
 
 module.exports = app;

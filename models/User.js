@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+const { ObjectId } = mongoose.Schema.Types;
 
 const validator = require('validator');
-const crypto = require("crypto");
+// const crypto = require("crypto");
 
 const bcrypt = require("bcryptjs");
 
@@ -74,12 +75,12 @@ const userSchema = mongoose.Schema(
         },
         status: {
             type: String,
-            default: "inactive",
+            default: "active",
             enum: ["active", "inactive", "blocked"],
         },
 
-        confirmationToken: String,
-        confirmationTokenExpires: Date,
+        // confirmationToken: String,
+        // confirmationTokenExpires: Date,
 
         passwordChangedAt: Date,
         passwordResetToken: String,
@@ -90,11 +91,12 @@ const userSchema = mongoose.Schema(
     }
 );
 
+// Create hash password  
 userSchema.pre("save", function (next) {
-    if (!this.isModified("password")) {
-        //  only run if password is modified, otherwise it will change every time we save the user!
-        return next();
-    }
+    // if (!this.isModified("password")) {
+    //     //  only run if password is modified, otherwise it will change every time we save the user!
+    //     return next();
+    // }
     const password = this.password;
 
     const hashedPassword = bcrypt.hashSync(password);
@@ -105,10 +107,11 @@ userSchema.pre("save", function (next) {
     next();
 });
 
-// userSchema.methods.comparePassword = function (password, hash) {
-//   const isPasswordValid = bcrypt.compareSync(password, hash);
-//   return isPasswordValid;
-// };
+// compare password 
+userSchema.methods.comparePassword = function (password, hash) {
+    const isPasswordValid = bcrypt.compareSync(password, hash);
+    return isPasswordValid;
+};
 
 // userSchema.methods.generateConfirmationToken = function () {
 //   const token = crypto.randomBytes(32).toString("hex");
@@ -124,5 +127,4 @@ userSchema.pre("save", function (next) {
 // };
 
 const User = mongoose.model("User", userSchema);
-
 module.exports = User;

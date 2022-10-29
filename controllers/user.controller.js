@@ -89,4 +89,21 @@ exports.login = async (req, res, next) => {
             error,
         });
     }
-}
+};
+
+exports.getMe = async (req, res, next) => {
+    try {
+        // res.json(req.user);
+        const user = await findByEmail(req.user?.email);
+
+        res.status(200).json({
+            status: 'successfully',
+            data: user
+        });
+    } catch (error) {
+        res.status(500).json({
+            status: 'fail',
+            error
+        });
+    };
+};

@@ -1,6 +1,8 @@
 const productController = require('../controllers/product.controller.js');
 const express = require('express');
 const uploader = require('../middleware/uploader.js');
+const verifyToken = require('../middleware/verifyToken.js');
+const authorization = require('../middleware/authorization.js');
 const router = express.Router();
 
 // file uploader route 
@@ -23,7 +25,7 @@ router
 
 router.route('/')
     .get(productController.getProducts)
-    .post(productController.createProduct)
+    .post(verifyToken, authorization('admin', 'store-manager'), productController.createProduct)
 
 
 // update and Delete 
